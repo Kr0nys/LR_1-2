@@ -1,4 +1,4 @@
-﻿Program Block4_Zad21;
+Program Block4_Zad21;
 var a,b,c,d: integer;
 begin
   write('Введите первое число: ');
@@ -8,11 +8,8 @@ begin
   write('Введите третье число: ');
   read(c);
   
-  if (a mod 2 = 0) then
-     write('Есть четное и нечетное число') else
-       if(b mod 2 = 0) then 
-         write('Есть четное и нечетное число') else
-           if(c mod 2 = 0) then 
-             write('Есть четное и нечетное число') else 
+   if ((a mod 2 = 0) or (b mod 2 = 0) or (c mod 2 = 0)) and
+   ((a mod 2 = 1) or (b mod 2 = 1) or (c mod 2 = 1)) then
+             write('Есть четное и нечетное число') else     
           write('Одно из условий не выполнено');
 end.
